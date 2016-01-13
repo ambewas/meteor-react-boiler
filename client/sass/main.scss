@@ -1,0 +1,31 @@
+/* CSS declarations go here */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+.total-runtime {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+body {
+  font-family: 'Roboto', Helvetica;
+  font-size: 16px;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel-default {
+  border-color: #F1F1F1;
+}
+
+.accounts-ui__field label {
+  pointer-events: none;
+}
