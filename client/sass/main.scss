@@ -1,4 +1,13 @@
-/* CSS declarations go here */
+//imports
+//globbing doesn't work here... :(
+
+@import './variables';
+@import '../components/overview/overview';
+@import '../components/login/login';
+
+
+//global app styles
+
 @font-face {
   font-family: 'Roboto';
   src: url('/fonts/Roboto-Regular.ttf') format('truetype');
@@ -6,9 +15,9 @@
 
 .total-runtime {
   position: absolute;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
-  right: 5px;
 }
 
 body {
@@ -17,13 +26,13 @@ body {
 }
 
 .app-container {
-  max-width: 500px;
   margin: 0 auto;
+  max-width: 500px;
   padding: 24px;
 }
 
 .panel-default {
-  border-color: #F1F1F1;
+  border-color: $border-color;
 }
 
 .accounts-ui__field label {
