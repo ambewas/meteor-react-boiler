@@ -7,4 +7,5 @@ Accounts.ui.config({
 Meteor.startup(function() {
   injectTapEventPlugin();
   FlowRouter.initialize();
+  Meteor.call('getData');
 });
